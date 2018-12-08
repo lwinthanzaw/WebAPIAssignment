@@ -1,4 +1,5 @@
-﻿--Create database AssignmentBank
+﻿
+--Create database AssignmentBank
 CREATE DATABASE AssignmentBank; 
 GO
 

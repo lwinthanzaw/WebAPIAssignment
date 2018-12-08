@@ -19,6 +19,7 @@ namespace WebAPIAssignment.Controllers
                 //if bankcard contain '-', remove
                 cardno = cardno.Replace("-", "");
 
+                //call stored procedure
                 ObjectParameter oparaResult = new ObjectParameter("Result", typeof(string));
                 ObjectParameter oparaCardtype = new ObjectParameter("CardType", typeof(string));
                 dbEntity.usp_ValidateBankCard(cardno, expirydate, oparaResult, oparaCardtype);
